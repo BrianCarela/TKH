@@ -1,0 +1,57 @@
+/*
+Colors to use:
+dark blue: #06365f
+light blue: #1c5380
+*/
+
+body {
+  font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  background-image: url("../images/bgtile.png");
+  background-repeat: repeat-x;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+  justify-content: center;
+  padding-top: 5%
+}
+
+.phones {
+  margin-right: 5;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  padding: 8.5%;
+  background-image: url("../images/frame.png");
+  background-size: cover;
+  max-width: 515px;
+  height: 284px;
+}
+
+.brand{
+    width: 200px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+color: #1c5380;
+
+
+}
+
+footer:hover {
+  background-color: black;
+}
