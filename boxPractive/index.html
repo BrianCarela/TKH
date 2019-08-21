@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BOXX</title>
+  </head>
+  <style>
+
+    .box {
+      width: 100px;
+      height: 100px;
+      border: 2px solid black;
+      backgroud-color: white;
+    }
+  </style>
+  <body>
+<div class="box">
+
+
+</div>
+
+  </body>
+  <script type="text/javascript">
+    let colors = ['yellow', 'blue', 'red', 'brown'];
+    let box = document.querySelector('.box');
+
+    function changeColor() {
+      let maxNum = colors.length;
+      let generate = Math.floor(Math.random() * maxNum);
+      box.style.backgroundColor = colors[generate]
+    }
+
+  box.addEventListener("click", changeColor)
+  </script>
+</html>
