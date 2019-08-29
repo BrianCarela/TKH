@@ -198,10 +198,14 @@ theBalrog();
 // Part 9
 function hornOfGondor() {
   // pop up an alert that the horn of gondor has been blown
+  alert('blow the horn');
   // Boromir's been killed by the Uruk-hai!
+
   // Remove Boromir from the Fellowship
+let x = document.querySelector(".rivendell").removeChild(document.querySelector(".rivendell").children[6]);
+//console.log(x)
 }
-// hornOfGondor();
+hornOfGondor();
 
 
 // Part 10

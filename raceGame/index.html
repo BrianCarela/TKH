@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Race Game</title>
+  <style media="screen">
+    body {
+      background: url(images/spaceshooter.gif) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      text-align: center;
+      background-repeat: no-repeat;
+    }
+
+    .button img {
+      height: 40%;
+      width: 40%;
+      margin-top: 200px;
+    }
+
+    .button img:hover {
+  cursor: pointer;
+}
+
+.button img:active {
+  font-size: 0.1rem;
+  transform: scale(.9);
+  box-shadow: 0 3px 15px -2px;
+}
+
+    .player1 img {
+      position: absolute;
+      margin-top: 10px;
+      margin-right: 10px;
+      height: 200px;
+      width: 150px;
+      margin-left: 20%;
+      visibility: hidden;
+
+    }
+
+    .player2 img {
+      position: absolute;
+      margin-top: 10px;
+      height: 200px;
+      width: 150px;
+      margin-right: 0%;
+      visibility: hidden;
+    }
+
+  </style>
+</head>
+
+<body>
+<div class="button">
+  <img class="buttonClass" src="images/startGame.png" alt="">
+</div>
+
+
+  <div class="player1">
+    <img src="images/space.gif" alt="">
+  </div>
+
+  <div class="player2">
+    <img src="images/space.gif" alt="">
+  </div>
+
+
+</body>
+
+<script src="script.js" charset="utf-8"></script>
+</html>

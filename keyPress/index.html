@@ -1,0 +1,27 @@
+< !DOCTYPE html > <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <title></title>
+      <style>
+        body {
+          background-color: black;
+
+        }
+        img {
+          margin-left: 500px;
+        }
+      </style>
+    </head>
+    <body>
+      <img src="https://media.giphy.com/media/fxpPSvdGnxfR6/giphy.gif" alt=""></body>
+      <script type="text/javascript">
+        let posL = 500;
+        document.addEventListener("keypress", function(event) {
+          if (event.keyCode == 32) {
+            let img = document.querySelector('img');
+            posL -= 10;
+            img.style.marginleft = posL + "px";
+          }
+        })
+      </script>
+    </html>

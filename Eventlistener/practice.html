@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style type="text/css" media="screen">
+    body{
+      background-color: black;
+    }
+    img{
+      margin-left: 800px;
+    }
+  </style>
+</head>
+<body>
+  <img src="https://media2.giphy.com/media/fxpPSvdGnxfR6/giphy.gif?cid=790b76117dc503773dec48c85dc8988e398f2cd68e759cd6&rid=giphy.gif" alt="">
+  <script type="text/javascript">
+    let posL = 800
+​
+    document.addEventListener("keypress", function(event){
+      // this checks that you pressed the spacebar, if using Mac OS & Chrome
+      if(event.keyCode == 32){
+        let img = document.querySelector('img')
+        posL -= 10
+        console.log(posL)
+        img.style.marginLeft = posL + "px";
+        // console.log(img)
+      }
+    })
+  </script>
+</body>
+</html>
