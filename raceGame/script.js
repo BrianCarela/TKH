@@ -38,7 +38,7 @@ document.addEventListener("keydown", function(event){
 
 
   if(posL < -460) {
-    alert('I won bitch')
+    alert('I won')
   }
 })
 
@@ -47,8 +47,8 @@ document.addEventListener("keydown", function(event){
   if(event.keyCode == 38){
     posL -= 10;
     player2.style.marginTop = posL + "px";
-    if(posL < -460) {
-      alert('I won bitch')
     }
-  }
+    if(posL < -460) {
+      alert('I won')
+    }
 })
