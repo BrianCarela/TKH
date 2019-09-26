@@ -4,21 +4,30 @@ class Task extends Component {
   constructor(){
     super();
     this.state = {
-      index: 'jgjhg'
+      done: ''
     }
   }
 
-markAsDone() {
-  document.getElementsByClassName(this.props.index).classList.toggle('done')
+markAsDone = () => {
+  if(this.state.done === '') {
+    this.setState({
+      done: 'checked'
+    })
+  } else {
+    this.setState({
+      done: ''
+    })
+  }
+  console.log(this.state.done)
 }
 
   render(){
     return(
       <div>
-        <p className={this.props.index}>task: {this.props.list}</p>
+        <p className={this.state.done}> task= {this.props.list}</p>
         <label>Done?</label>
         <input
-          className="check"
+          className={this.state.done}
           type="checkbox"
           onClick={this.markAsDone}
         />

@@ -14,3 +14,6 @@ export default class ProfileCard extends Component {
     );
   }
 }
+
+
+Component

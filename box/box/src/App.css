@@ -21,7 +21,16 @@
   color: #09d3ac;
 }
 
-.checked {
-  color: red;
-  text-decoration: line-through;
+.box {
+  border: black 3px solid;
+  height: 400px;
+  width: 400px;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
 }
